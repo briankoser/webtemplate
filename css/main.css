@@ -40,8 +40,6 @@ nav ul li {
     list-style-type: none;
 }
 
-
-
 hr {
     display: block;
     height: 1px;
@@ -94,18 +92,13 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+    border-bottom: 20px solid black;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #006b9f;
 }
 
 .title {
@@ -131,7 +124,6 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
 }
 
 nav a:hover,
@@ -204,8 +196,6 @@ nav a:hover {
     nav a {
         float: left;
         width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
         margin-bottom: 0;
     }
 
