@@ -1,26 +1,11 @@
-/*****************************************************************************
-  ALL
-******************************
+/******************************************************************************
   *, @viewport
 ******************************************************************************/
 * + * {
     margin-top: 1.5em;
 }
 
-/* @-ms-viewport { 
-    width: device-width; 
-}
 
-@viewport { 
-    width: device-width; 
-} */
-
-/******************************************************************************
-  SECTIONING AND STRUCTURING
-******************************
-  html, body, header, footer, nav, main, article, aside, section, p, pre,
-  blockquote, figure, figcaption, address, summary, details, div
-******************************************************************************/
 html {
   box-sizing: border-box;
 }
@@ -169,12 +154,90 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+   
+/******************************************************************************
+  SECTIONING AND STRUCTURING
+******************************
+  html, body, header, footer, nav, main, article, aside, section, p, pre,
+  blockquote, figure, figcaption, address, summary, details, div
+******************************************************************************/
+main {
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+pre, 
+samp { 
+    font-family: monospace, sans-serif; 
+}
+
+pre code {
+    display: inline-block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote mark, 
+q mark {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 1.4rem;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+address {
+    font-style: normal;
+}
 
 
 
+/******************************************************************************
+  LISTS
+*********
+  ul, ol, li, dl, dt, dd, menu, menuitem
+******************************************************************************/
+ul li {
+    list-style-type: square;
+}
 
+ul ul li {
+    list-style-type: circle;
+}
 
+ol {
+    list-style-type: decimal;
+}
 
+ol ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+
+ol ol li::before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+}
+
+dd {
+    padding-left: 1rem;
+}
 
 
 
