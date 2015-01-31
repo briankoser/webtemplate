@@ -7,6 +7,20 @@
     margin-top: 1.5em;
 }
 
+/* @-ms-viewport { 
+    width: device-width; 
+}
+
+@viewport { 
+    width: device-width; 
+} */
+
+/******************************************************************************
+  SECTIONING AND STRUCTURING
+******************************
+  html, body, header, footer, nav, main, article, aside, section, p, pre,
+  blockquote, figure, figcaption, address, summary, details, div
+******************************************************************************/
 html {
   box-sizing: border-box;
 }
@@ -22,20 +36,11 @@ textarea {
     color: #333;
 }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
+nav ul li {
+    list-style-type: none;
 }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
 hr {
     display: block;
