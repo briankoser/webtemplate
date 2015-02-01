@@ -5,13 +5,14 @@
     margin-top: 1.5em;
 }
 
-
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
 
 html,
 button,
@@ -28,7 +29,7 @@ nav ul li {
 hr {
     display: block;
     height: 1px;
-    border: 0;
+    border: 0;*
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
@@ -47,10 +48,6 @@ fieldset {
     padding: 0;
 }
 
-textarea {
-    resize: vertical;
-}
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -62,10 +59,6 @@ textarea {
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
 
 .wrapper {
     width: 90%;
@@ -416,9 +409,18 @@ hr {
 /******************************************************************************
   HELPER CLASSES
 ******************************************************************************/
-.bd,
-.media {
-    overflow: hidden; 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }
 
 .edit-block {
@@ -438,6 +440,15 @@ hr {
 
 .font-style-normal {
     font-style: normal;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
 }
 
 .no-margin,
@@ -467,6 +478,27 @@ hr {
        -moz-font-feature-settings: 'lnum' 1;
             font-feature-settings: 'lnum' 1;
     text-transform: uppercase;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
 
 
@@ -551,68 +583,6 @@ hr {
 }
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
    Print styles
    ========================================================================== */
 
@@ -637,7 +607,6 @@ hr {
         content: " (" attr(title) ")";
     }
 
-    .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
         content: "";
