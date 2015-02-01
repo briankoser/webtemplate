@@ -35,10 +35,7 @@ hr {
     padding: 0;
 }
 
-audio,
-canvas,
-img,
-video {
+img {
     vertical-align: middle;
 }
 
@@ -291,7 +288,8 @@ th {
   cite, data, progress, time, meter, code, var, samp, kbd, keygen, bdi, bdo, 
   ruby, rt, rp, span
 ******************************************************************************/
-strong {
+strong,
+b {
     font-weight: bold;
 }
 

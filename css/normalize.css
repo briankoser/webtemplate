@@ -1,13 +1,11 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
- * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
 
 html {
-  font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -103,23 +101,6 @@ a:hover {
    ========================================================================== */
 
 /**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
  * Address styling not present in Safari and Chrome.
  */
 
@@ -144,14 +125,6 @@ h1 {
 mark {
   background: #ff0;
   color: #000;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-
-small {
-  font-size: 80%;
 }
 
 /**
@@ -202,16 +175,6 @@ svg:not(:root) {
 
 figure {
   margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
 }
 
 /**
