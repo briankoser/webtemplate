@@ -291,6 +291,103 @@ th {
 
 
 
+/******************************************************************************
+  PHRASING
+************
+  a, strong, em, b, i, u, s, sup, sub, small, abbr, dfn, mark, del, ins, q, 
+  cite, data, progress, time, meter, code, var, samp, kbd, keygen, bdi, bdo, 
+  ruby, rt, rp, span
+******************************************************************************/
+strong {
+    font-weight: bold;
+}
+
+abbr {
+    letter-spacing: 0.1em;
+}
+
+abbr[title], 
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+del {
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #aaa;
+       -moz-text-decoration-color: #aaa;
+            text-decoration-color: #aaa;
+}
+
+del.edit-block {
+    border-left-color: #91081f;
+    color: #aaa;
+    text-decoration: none;
+}
+
+ins {
+    border-bottom: 1px solid #ccc;
+    color: #388807;
+    text-decoration: none;
+}
+
+ins::before {
+    content: ' (Update) ';
+    display: inline;
+    font-style: italic;
+}
+
+ins[datetime]::before {
+    content: ' (Update ' attr(datetime) ') ';
+}
+
+ins p {
+    display: inline;
+}
+
+ins.edit-block {
+    border-bottom: none;
+    border-left-color: #47ad09;
+    color: #444;
+    margin-bottom: 1.4rem;
+}
+
+code,
+var,
+.line-numbers,
+.line-pre,
+.terminal { 
+    font: 14px/1.3 'Source Code Pro', Consolas, monospace !important;
+}
+
+code,
+var {
+    background-color: rgba(0,107,159,0.04);
+    border: 1px solid #006b9f;
+    border-radius: 2px;
+    color: #006b9f;
+    margin: 0 0.15em;
+    padding: 0 0.3em;
+}
+
+kbd {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 2px #fff inset;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin: 0 0.1em;
+    padding: 0.1em 0.6em;
+    text-shadow: 0 1px 0 #fff;
+    white-space: nowrap;
+}
+
+
+
 
 /* ==========================================================================
    Media Queries
