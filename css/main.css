@@ -413,6 +413,64 @@ hr {
 
 
 
+/******************************************************************************
+  HELPER CLASSES
+******************************************************************************/
+.bd,
+.media {
+    overflow: hidden; 
+}
+
+.edit-block {
+    border-left: 0.5rem solid;
+    display: block;
+    margin-left: -1rem;
+    padding-left: 0.5rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.no-margin,
+.no-margin li {
+    margin: 0;
+}
+
+.right {
+    display: block;
+    float: right;
+}
+
+.small-caps {
+    -webkit-font-feature-settings: 'smcp';
+       -moz-font-feature-settings: 'smcp';
+            font-feature-settings: 'smcp';
+}
+
+.terminal {
+    border: 1px solid #000;
+    background-color: #333;
+    color: #fff;
+}
+
+.uppercase {
+    -webkit-font-feature-settings: 'lnum' 1;
+       -moz-font-feature-settings: 'lnum' 1;
+            font-feature-settings: 'lnum' 1;
+    text-transform: uppercase;
+}
+
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
