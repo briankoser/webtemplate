@@ -151,6 +151,10 @@ nav a:hover {
   html, body, header, footer, nav, main, article, aside, section, p, pre,
   blockquote, figure, figcaption, address, summary, details, div
 ******************************************************************************/
+footer a {
+    color: white;
+}
+
 main {
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
@@ -513,8 +517,8 @@ hr {
 
     nav a {
         float: left;
-        width: 27%;
         margin-bottom: 0;
+        padding-left: 30px;
     }
 
     nav li:first-child a {
